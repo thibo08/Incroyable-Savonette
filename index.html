@@ -1,0 +1,37 @@
+<style>
+    .button {
+        width: 100px;
+        line-height: 50px;
+        background: #000;
+        border-radius: 20px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+</style>
+<div class="button">Click Me!</div>
+<canvas></canvas>
+<script>
+    const canvas = document.querySelector('canvas');
+    const gl = canvas.getContext('webgl');
+    gl.clearColor(0.9, 0.5, 0.2, 1);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+
+    let isBlack = true;
+    const myButton = document.querySelector('.button');
+    // myButton.style.background = 'red';
+    // document.body.style.background = 'black';
+
+    function onClick() {
+        open('http://google.com', '_blank');
+        if (isBlack === true) {
+            myButton.style.background = 'red';
+            isBlack = false;
+        } else {
+            myButton.style.background = 'black';
+            isBlack = true;
+        }
+    }
+
+    myButton.addEventListener('click', onClick);
+</script>
