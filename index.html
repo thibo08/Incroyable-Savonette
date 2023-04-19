@@ -1,36 +1,32 @@
-
 <html translate="no">
-    <style>
-    .button {
-        width: 700px;
-        line-height: 50px;
-        background: #000;
-        border-radius: 20px;
-        color: #fff;
-        text-align: center;
-        cursor: pointer;
-    }
-</style>
-<div class="button">Click Me!</div>
+    <head>
+        <title>Incroyable Savonette</title>
+        <meta
+            name="viewport"
+            content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div class="home">
+            <div class="background"></div>
+            <div class="logo"><img src="assets/images/logo.svg" /></div>
 
-<script>
+            <div class="menu">
+                <div class="menu-item">Contacts</div>
+                <div class="menu-item">À propos</div>
+                <div class="menu-item">Menu</div>
+            </div>
+            <div class="explore">
+                <img class="arrow" src="assets/images/Arrow.svg" />explore
+                collection
+            </div>
 
-    let isBlack = true;
-    const myButton = document.querySelector('.button');
-    // myButton.style.background = 'red';
-    // document.body.style.background = 'black';
-
-    function onClick() {
-        // open('http://google.com', '_blank');
-        if (isBlack === true) {
-            myButton.style.background = 'red';
-            isBlack = false;
-        } else {
-            myButton.style.background = 'black';
-            isBlack = true;
-        }
-    }
-
-    myButton.addEventListener('click', onClick);
-</script>
+            <div class="content">
+                <div class="title">Incroyable Savonette</div>
+                <div class="subtitle">Fait par nous, fait pour vous</div>
+            </div>
+        </div>
+        <div class="Contacts"></div>
+    </body>
 </html>
