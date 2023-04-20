@@ -6,7 +6,6 @@ function scrollToID(id) {
 // Turtle
 window.addEventListener('load', () => {
     const turtle = document.querySelector('.tortue-little');
-    console.log(turtle);
     requestAnimationFrame(animate);
     let x = 0;
     function animate(t) {
