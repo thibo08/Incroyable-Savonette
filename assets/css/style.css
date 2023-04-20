@@ -1,14 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;800&display=swap');
 
 :root {
     --blanc: #f7f7f7;
     --beige: #ecd8bd;
     --marron: #503112;
-    --dark: #2b1e16;
+    --dark: #2a1e16;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 body {
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
     color: var(--blanc);
     margin: 0;
@@ -45,9 +50,9 @@ body {
 }
 .menu-item {
     font-weight: 800;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 40px;
-    margin-left: 168px;
+    margin-left: 120px;
 }
 
 .content {
@@ -61,7 +66,7 @@ body {
     width: 560px;
 }
 .subtitle {
-    font-family: "Lobster", cursive;
+    font-family: 'Lobster', cursive;
     font-size: 42px;
     line-height: 52px;
 }
@@ -82,10 +87,10 @@ body {
 .quote {
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 150px 0;
 }
 .quote__text {
-    color: var(--dark);
+    color: var(--marron);
     font-size: 47px;
     line-height: 63px;
     text-align: center;
@@ -124,6 +129,7 @@ body {
     padding: 0 60px;
     border-radius: 100px;
     margin-top: 40px;
+    text-decoration: inherit;
 }
 
 .video {
@@ -133,44 +139,132 @@ body {
     margin: auto;
     margin-top: -150px;
 }
+.video video {
+    width: 100%;
+}
 
 .ou-acheter {
+    padding: 100px 0;
+    color: var(--dark);
+    text-align: center;
 }
 .ou-acheter__title {
+    font-size: 52px;
+    line-height: 69px;
 }
+.ou-acheter__list {
+    margin: auto;
+    margin-top: 50px;
+    border-top: 1px solid var(--dark);
+    border-bottom: 1px solid var(--dark);
+    max-width: 1150px;
+}
+.ou-acheter__item {
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.ou-acheter__name {
+    text-align: left;
+}
+
 .ou-acheter__address {
+    text-align: right;
+    color: inherit;
+    margin-left: 100px;
 }
 
-.Jeu-concours {
-    width: 953px;
-    height: 601px;
+.jeu-concours {
+    padding: 100px 0;
+    background: var(--beige);
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.button {
-    width: 232px;
+.jeu-concours__left {
+}
+.jeu-concours__image {
+}
+.jeu-concours__right {
+    margin-left: 80px;
+}
+.jeu-concours__text {
+    font-size: 29px;
+    line-height: 39px;
+    width: 380px;
+}
+.jeu-concours__button {
+    display: inline-block;
     height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--beige);
+    background-color: var(--dark);
+    padding: 0 60px;
+    border-radius: 100px;
+    margin-top: 40px;
+    text-decoration: inherit;
 }
 
-.tortue-little {
-    position: absolute;
+.footer {
+    background: var(--dark);
+    padding: 50px 0 0;
+    position: relative;
+    color: var(--beige);
+    overflow: hidden;
 }
-.two-tortue {
-    position: absolute;
+.footer__content {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer__left {
+}
+.footer__right {
+    display: flex;
+}
+.footer__column {
+    margin-left: 50px;
+}
+.footer__subtitle {
+    font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.footer__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.footer__address {
+    font-size: 12px;
+    line-height: 20px;
+    display: block;
 }
 .logo-is {
     width: 82px;
     height: 64px;
 }
 .copyright {
+    font-family: sans-serif;
+    font-size: 11px;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
-.Suivez-Nous {
+
+.tortue-little {
+    position: absolute;
+    bottom: 0;
+    right: 370px;
 }
-.Contact {
-}
-.Insta-Logo {
-}
-.Mail-Logo {
-}
-.Adresse {
-}
-.Téléphone {
+.two-tortue {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
 }

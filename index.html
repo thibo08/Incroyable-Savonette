@@ -9,7 +9,7 @@
             content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
         />
         <link rel="stylesheet" href="/assets/css/style.css" />
-        <script type="module" src="/assets/js/index.js"></script>
+        <script src="/assets/js/index.js"></script>
     </head>
     <body>
         <div class="home">
@@ -17,13 +17,10 @@
             <div class="logo"><img src="assets/images/logo.svg" /></div>
 
             <div class="menu">
-                <div class="menu-item">À propos</div>
-                <div class="menu-item">Où Acheter</div>
+                <div class="menu-item" onclick="scrollToID('#about');">À propos</div>
+                <div class="menu-item" onclick="scrollToID('#ou-acheter');">Où Acheter</div>
             </div>
-            <div class="explore">
-                <img class="arrow" src="assets/images/arrow.svg" />explore
-                collection
-            </div>
+            <div class="explore"><img class="arrow" src="assets/images/arrow.svg" />explore collection</div>
 
             <div class="content">
                 <div class="title">Incroyable Savonette</div>
@@ -33,72 +30,94 @@
 
         <div class="quote">
             <div class="quote__text">
-                Nous sommes une entreprise de savon artisanale composée de 12
-                collégiens.
+                Nous sommes une entreprise de savon artisanale composée de 12 collégiens.
             </div>
         </div>
 
-        <div class="about">
+        <div class="about" id="about">
             <div class="about__left">
-                <img
-                    class="about__image"
-                    src="/assets/images/about-image.png"
-                />
+                <img class="about__image" src="/assets/images/about-image.png" />
             </div>
 
             <div class="about__right">
                 <div class="about__text">
-                    Nous utilisons des ingrédients naturels de qualité
-                    supérieure pour créer des savons doux et nourrissants pour
-                    la peau. Notre processus de fabrication est minutieux et
-                    chaque savon est fabriqué à la main avec soin et attention
-                    aux détails.
+                    Nous utilisons des ingrédients naturels de qualité supérieure pour créer des savons doux
+                    et nourrissants pour la peau. Notre processus de fabrication est minutieux et chaque savon
+                    est fabriqué à la main avec soin et attention aux détails.
                 </div>
-                <a class="about__button">Où Acheter</a>
+                <div onclick="scrollToID('#ou-acheter');" class="about__button">Où Acheter</div>
             </div>
         </div>
 
         <div class="video">
-            <video
-                src="assets/video/video-produit.mp4"
-                autoplay
-                muted
-                playsinline
-                loop="true"
-            ></video>
+            <video src="assets/video/video-produit.mp4" autoplay muted playsinline loop="true"></video>
         </div>
 
-        <div class="ou-acheter"></div>
-        <div class="ou-acheter__title">Collège Saint Martin, Montsûrs</div>
-        <a
-            class="ou-acheter__address"
-            href="https://goo.gl/maps/kZ9hw3bK1r8LNxPk7"
-            target="_blank"
-            >1 Rue du Marchis53150 Montsûrs<br />02 43 01 01 56</a
-        >
-
-        <div class="Jeu-concours">
-            <img class="concours" src="assets/images/jeu-concours.jpg" />
-            <p>
-                On vous présente notre jeu concours pour participer veuillez
-                suivre les consigne si sous: Pour participer c’est simple: Likez
-                notre publication, partagez, abonnez vous a notre compte pour
-                suivre notre mini entreprise
-            </p>
-            <div class="button">Instagram</div>
+        <div class="ou-acheter" id="ou-acheter">
+            <div class="ou-acheter__title">Où Acheter</div>
+            <div class="ou-acheter__list">
+                <div class="ou-acheter__item">
+                    <div class="ou-acheter__name">Collège Saint Martin, Montsûrs</div>
+                    <a
+                        class="ou-acheter__address"
+                        href="https://goo.gl/maps/kZ9hw3bK1r8LNxPk7"
+                        target="_blank"
+                        >1 Rue du Marchis<br />53150 Montsûrs<br />02 43 01 01 56</a
+                    >
+                </div>
+            </div>
         </div>
+
+        <div class="jeu-concours">
+            <div class="jeu-concours__left">
+                <img class="jeu-concours__image" src="assets/images/jeu-concours.jpg" />
+            </div>
+            <div class="jeu-concours__right">
+                <p class="jeu-concours__text">
+                    On vous présente notre jeu concours pour participer veuillez suivre les consigne si sous:
+                    Pour participer c’est simple: Likez notre publication, partagez, abonnez vous a notre
+                    compte pour suivre notre mini entreprise
+                </p>
+                <a
+                    class="jeu-concours__button"
+                    href="https://www.instagram.com/mini.entrepreneur/"
+                    target="_blank"
+                    >Instagram</a
+                >
+            </div>
+        </div>
+
         <div class="footer">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img class="logo-is" src="assets/images/logo.svg" />
+                    <div class="copyright">Copyright ©2023 Incroyable Savonette</div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__column">
+                        <div class="footer__subtitle">Suivez-Nous</div>
+                        <a
+                            class="footer__icon"
+                            href="https://www.instagram.com/mini.entrepreneur/"
+                            target="_blank"
+                            ><img src="assets/images/instagram.svg"
+                        /></a>
+                        <a class="footer__icon" href="mailto:epa.saintmartin53@gmail.com"
+                            ><img src="assets/images/mail.svg"
+                        /></a>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__subtitle">Contact</div>
+                        <a class="footer__address" href="mailto:epa.saintmartin53@gmail.com"
+                            >epa.saintmartin53@gmail.com</a
+                        >
+                        <a class="footer__address" href="tel:0243010156">02 43 01 01 56</a>
+                    </div>
+                </div>
+            </div>
+
             <img class="tortue-little" src="assets/images/tortue.png" />
             <img class="two-tortue" src="assets/images/big-turtles.png" />
-            <img class="logo-is" src="assets/images/logo.svg" />
-
-            <div class="copyright">Copyright ©2023 Incroyable Savonette</div>
-            <div class="Suivez-Nous">Suivez-Nous</div>
-            <div class="Contact">Contact</div>
-            <img class="Insta-logo" src="assets/images/instagram.svg" />
-            <img class="Mail-logo" src="assets/images/mail.svg" />
-            <div class="Adresse">epa.saintmartin53@gmail.com</div>
-            <div class="Téléphone">02 43 01 01 56</div>
         </div>
     </body>
 </html>

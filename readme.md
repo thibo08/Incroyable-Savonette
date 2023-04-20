@@ -2,6 +2,6 @@
 
 ## TODO
 
--   [ ] Finish content
--   [ ] Scroll-to links
+-   [x] Finish content
+-   [x] Scroll-to links
 -   [ ] Responsive styles
