@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;800&display=swap");
 
 :root {
     --blanc: #f7f7f7;
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     color: var(--blanc);
     margin: 0;
@@ -61,7 +61,7 @@ body {
     width: 560px;
 }
 .subtitle {
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
     font-size: 42px;
     line-height: 52px;
 }
@@ -78,7 +78,37 @@ body {
     top: 15px;
     margin-right: 10px;
 }
-.Contacts {
-    height: 100vh;
-    background-color: rgb(153, 156, 158);
+
+.Jeu-concours {
+    width: 953px;
+    height: 601px;
+}
+.button {
+    width: 232px;
+    height: 50px;
+}
+
+.tortue-little {
+    position: absolute;
+}
+.two-tortue {
+    position: absolute;
+}
+.logo-is {
+    width: 82px;
+    height: 64px;
+}
+.copyright {
+}
+.Suivez-Nous {
+}
+.Contact {
+}
+.Insta-Logo {
+}
+.Mail-Logo {
+}
+.Adresse {
+}
+.Téléphone {
 }
