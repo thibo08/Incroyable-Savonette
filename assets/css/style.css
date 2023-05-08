@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;800&display=swap');
 
 :root {
     --blanc: #f7f7f7;
@@ -13,7 +13,7 @@ a {
 }
 
 body {
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
     color: var(--blanc);
     margin: 0;
@@ -49,6 +49,7 @@ body {
     display: flex;
 }
 .menu-item {
+    cursor: pointer;
     font-weight: 800;
     font-size: 26px;
     line-height: 40px;
@@ -66,7 +67,7 @@ body {
     width: 560px;
 }
 .subtitle {
-    font-family: "Lobster", cursive;
+    font-family: 'Lobster', cursive;
     font-size: 42px;
     line-height: 52px;
 }
@@ -260,4 +261,148 @@ body {
     position: absolute;
     bottom: 0;
     right: 100px;
+}
+
+/* Queries */
+@media (max-width: 780px) {
+    .logo {
+        left: 30px;
+        top: 30px;
+    }
+    .logo img {
+        height: 40px;
+    }
+    .menu {
+        right: 30px;
+        top: 30px;
+    }
+    .menu-item {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .content {
+        left: 30px;
+        top: calc(50% - 100px);
+    }
+    .title {
+        font-size: 60px;
+        width: 100px;
+        line-height: 1.1em;
+    }
+    .subtitle {
+        font-size: 26px;
+    }
+    .explore {
+        bottom: 30px;
+        left: 30px;
+        font-size: 15px;
+    }
+    .arrow {
+        height: 20px;
+        top: 8px;
+    }
+    .quote {
+        padding: 100px 0;
+    }
+    .quote__text {
+        width: 80%;
+        font-size: 30px;
+        line-height: 1.4em;
+    }
+    .about {
+        padding: 80px 0;
+        flex-direction: column;
+    }
+    .about__image {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .about__right {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .about__text {
+        width: 100%;
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+    .about__button {
+        margin-top: 50px;
+    }
+    .video {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .ou-acheter {
+        padding: 80px 0;
+    }
+    .ou-acheter__title {
+        font-size: 32px;
+        line-height: 1.4em;
+    }
+    .ou-acheter__list {
+        width: 80%;
+    }
+    .ou-acheter__item {
+        font-size: 15px;
+        line-height: 1.4em;
+        justify-content: space-between;
+    }
+    .ou-acheter__name {
+        max-width: 50%;
+    }
+    .ou-acheter__address {
+        margin-left: 20px;
+    }
+    .jeu-concours {
+        padding: 80px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .jeu-concours__image {
+        width: 70%;
+    }
+    .jeu-concours__right {
+        margin: 0;
+    }
+    .jeu-concours__text {
+        width: 80%;
+        font-size: 18px;
+        line-height: 1.4em;
+        margin: 30px auto;
+    }
+    .jeu-concours__button {
+        margin-top: 10px;
+    }
+    .footer__content {
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 90px;
+        text-align: center;
+    }
+    .footer__right {
+        gap: 50px;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    .footer__column {
+        margin: 0;
+    }
+    .copyright {
+        margin: 0;
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+    }
+    .tortue-little {
+        right: 199px;
+        height: 20px;
+    }
+    .two-tortue {
+        height: 80px;
+        right: 10px;
+    }
 }
